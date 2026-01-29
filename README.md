@@ -20,4 +20,7 @@ Ans: A pod in kubernetes is a runtime specification of a container in docker. A 
 
 (5) What is a namespace in Kubernetes?
 
+Ans: In Kubernetes namespace is a logical isolation of resources, network policies, rbac and everything. For example, there are two projects using same k8s cluster. One project can use namespace1 and other project can use namespace2 without and overlap and authentication problems.
+
+(6) What is the role of kube proxy?
 Ans:
