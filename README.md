@@ -8,6 +8,7 @@ Ans: Docker is a container platform where as Kubernetes is a container orchestra
 Ans: On a broad level, you can divide the kubernetes components in two parts.
 
 (i) Control Plane (API Server, Scheduler, Controll Manager, C-CM, etcd)
+
 (ii) Data Plane (Kubelet, Kube-proxy, Container Runtime)
 
 (3) What are the main difference between the Docker Swarm and Kubernetes?
@@ -25,6 +26,7 @@ Ans: In Kubernetes namespace is a logical isolation of resources, network polici
 (6) What is the role of kube proxy?
 
 Ans: Kube-proxy works by maintaining a set of network rules on each node in the cluster, which are updated dynamically as services are added or removed. When a client sends a request to a service, the request is intercepted by kube-proxy on the node where it was received. Kube-proxy then looks up the destination endpoint for the service and routes the request accordingly.
+
 Kube-proxy is an essential component of a kubernetes cluster, as it ensures that services can communicate with each other.
 
 (7) What are the different types of services within Kubernetes?
@@ -37,4 +39,10 @@ Ans: There are three different types of services that a user  can create.
 (8) What is the difference between NodePort and LoadBalancer type service?
 
 Ans: When a service is created a NodePort type, the kube-proxy updates the IPtables with node IP address and port that is choosen in the service configuration to access the pods.
+
 Where as if you create a Service as type LoadBalancer, the cloud control manager creates a external load balancer IP using the underlying cloud provider logic in the C-CM. Users can access servicesusing the external IP.
+
+(9) What is the role of Kubelet?
+
+Ans: Kubelet manages the containers that are scheduled to run on that node. It ensures that the containersare running and healthy, and that the resources they need are avaible.
+Kubelet communicates with the Kubernetes API server to get information about the containers that should be running on the node, and then starts and stops the containers as needed to maintain the desired state. It also monitors the containers to ensure that they are running correctly, and restarts them if necessary.
