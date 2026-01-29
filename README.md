@@ -32,9 +32,13 @@ Kube-proxy is an essential component of a kubernetes cluster, as it ensures that
 (7) What are the different types of services within Kubernetes?
 
 Ans: There are three different types of services that a user  can create.
+
 (1) Cluster IP Mode
+
 (2) Node Port Mode
+
 (3) Load Balancer Mode
+
 
 (8) What is the difference between NodePort and LoadBalancer type service?
 
