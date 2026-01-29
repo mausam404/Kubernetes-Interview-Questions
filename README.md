@@ -45,4 +45,7 @@ Where as if you create a Service as type LoadBalancer, the cloud control manager
 (9) What is the role of Kubelet?
 
 Ans: Kubelet manages the containers that are scheduled to run on that node. It ensures that the containersare running and healthy, and that the resources they need are avaible.
+
 Kubelet communicates with the Kubernetes API server to get information about the containers that should be running on the node, and then starts and stops the containers as needed to maintain the desired state. It also monitors the containers to ensure that they are running correctly, and restarts them if necessary.
+
+(10) Day to Day activities on Kubernetes?
