@@ -1,5 +1,6 @@
 # Kubernetes-Interview-Questions
 (1) What is the difference between Docker and Kubernetes?
+
 Ans: Docker is a container platform where as Kubernetes is a container orchestration environment that offers capabilities like Auto Scaling, Auto healing, Clustering and Enterprise level support like Load Balancing.
 
 (2) What are the main components of Kubernetes architecture?
